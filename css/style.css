@@ -49,12 +49,12 @@ img {
 }
 
 .mySlides img{
-  width: 520px;
-  height: 500px;
+  width: 50%;
+  height: 50%px;
   /*height: 99%;*/
 }
 
-/*Right Side*/
+/*Nothing*/
 .row {
   float: center;
   padding: 2px;

@@ -1,38 +1,29 @@
-nav { 
-  /* ADD scrolling nav bar feature */
-  background-color: #0d37aaa8;
-  position: fixed;
-  top: 0;
-  width: 100000000000000px;
-  height: 80px;
-  display: inline-flex;
-  align-items: center;
-  padding-left: 15px;
-  border-style: none;
-  margin-left: -10px;
-}
 
-nav h2 {
-  color:rgb(189, 181, 174);
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  position: fixed;
-  left: 5%; 
-}
-
-nav p {
-  color:rgb(189, 181, 174);
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  position: fixed;
-  right: 5%; 
-}
 
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0; background-color: rgb(240, 235, 219);}
 .mySlides {display: none}
 img {
   vertical-align: middle;
+}
+
+
+.box0 {
+  position: relative;
+  left: 10%;
+}
+.box{
+  font-size: calc(0.25rem + 1vw);
+  position: relative;
+  top: 10%;
+}
+.box1 {
+  position: relative;
+  left: 10%;
+}
+.box2{
+  position: absolute;
+  left: 60.05%;
 }
 
 /* Slideshow container */
@@ -49,12 +40,18 @@ img {
 }
 
 .mySlides img{
-  width: 50%;
-  height: 50%px;
+  width: 40%;
+  height: auto;
   /*height: 99%;*/
 }
 
-/*Nothing*/
+@media only screen and (max-width: 480px) {
+  .mySlides img{
+  width:68%;
+ }
+}
+
+/*Right Side*/
 .row {
   float: center;
   padding: 2px;
@@ -65,8 +62,8 @@ img {
 .next {
   cursor: pointer;
   position: absolute;
-  right: 10.59%;
-  top: 11%;
+  right: 9.5%;
+  top: 17.8%;
   /*width: auto;
   padding: 2px;*/
   margin-top: -22px;
@@ -86,11 +83,19 @@ img {
   display: inline-block
 }
 
+@media only screen and (max-width: 480px) {
+  .next{
+  position: absolute;
+  left: 19%;
+  top: 18.25%;;
+ }
+}
+
 .prev {
   cursor: pointer;
   position: absolute;
-  left: 10.59%;
-  top: 11%;
+  left: 9.5%;
+  top: 17.8%;
   /*width: auto;
   padding: 2px;*/
   margin-top: -22px;
@@ -108,6 +113,18 @@ img {
   /*border-radius: 15px;*/
   /*background-color: #BC986A;*/
   display: inline-block
+}
+
+@media only screen and (max-width: 480px) {
+  .prev{
+  position: absolute;
+  left: 19%;
+  top: 60.25%;;
+ }
+ .prev img{
+   width: 80%;
+   height: auto;
+ }
 }
 
 /* On hover, add a black background color with a little bit see-through */
